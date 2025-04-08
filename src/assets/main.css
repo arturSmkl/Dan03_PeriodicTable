@@ -1,35 +1,54 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+   margin: 0 auto;
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 2rem;
+    animation: colorShift 5s infinite alternate;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+p {
+    line-height: 1;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.solid {
+    color: var(--color-text);
 }
+
+.liquid {
+    color: var(--sea);
+}
+
+.gas {
+    color: var(--rose);
+}
+
+.unknown-phase {
+    color: var(--silver);
+}
+
+@keyframes colorShift {
+    0% {
+        color: var(--indigo);
+    }
+    25% {
+        color: var(--magenta);
+    }
+    50% {
+        color: var(--red-crayola);
+    }
+    75% {
+        color: var(--sunglow);
+    }
+    100% {
+        color: var(--indigo);
+    }
+}
+
