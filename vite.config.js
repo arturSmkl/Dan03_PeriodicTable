@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Dan_03PeriodicTable/',
+  base: '/Dan03_PeriodicTable/',
   plugins: [
     vue(),
     vueDevTools(),

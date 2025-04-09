@@ -11,7 +11,6 @@ h1 {
     line-height: 1.2;
     text-align: center;
     margin-top: 2rem;
-    animation: colorShift 5s infinite alternate;
 }
 
 p {
@@ -34,21 +33,4 @@ p {
     color: var(--silver);
 }
 
-@keyframes colorShift {
-    0% {
-        color: var(--indigo);
-    }
-    25% {
-        color: var(--magenta);
-    }
-    50% {
-        color: var(--red-crayola);
-    }
-    75% {
-        color: var(--sunglow);
-    }
-    100% {
-        color: var(--indigo);
-    }
-}
 
